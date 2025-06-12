@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual_Sparks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <ul style="list-style-type:none;" class="navbar">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Our Services</a></li>
+           <!-- <li><a href="#services2" class="nav-link">Gallery</a></li> -->
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+            <li><a href="#team" class="nav-link">Our Team</a></li>
+        </ul>
+    </header>
+    <div class="banner">Dream To Reality</div>
+    <section id="home">
+        <img src="src/bg.png" alt="camera" height="500">
+        <h1>VISUAL SPARK EFX</h1>
+    </section>
+    <section id="services">
+        <h2 class="title">Our Services</h2>
+        <div class="box">
+            <ul style="list-style-type: none;">
+                <li>Poster design</li>
+                <li>Logo design</li>
+                <li>Videos editing</li>
+                <li>Photo editing</li>
+                <li>Photoshoot</li>
+            </ul>
+            <video controls>
+                <source src="Video-543.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <!-- <section id="services2">
+        <div class="title">Gallery</div>
+    </section>  -->
+    <section id="contact">
+        <h2 class="title">Contact Us</h2>
+        <div>
+            <form id="contactForm">
+                <!-- Name Field -->
+                <div class="main">
+                    <div>
+                        <label for="name">Name :</label>
+                        <input type="text" id="name" name="name" required />
+                        <span id="nameError" class="error-message"></span>
+                    </div>
+                    <div>
+                        <!-- Phone Number Field -->
+                        <label for="phone">Phone Number :</label>
+                        <input type="tel" id="phone" name="phone" required />
+                        <span id="phoneError" class="error-message"></span>
+                    </div>
+                </div>
+
+                <!-- Email Field -->
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required />
+                <span id="emailError" class="error-message"></span>
+                
+                <!-- Message Field -->
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <span id="messageError" class="error-message"></span>
+                
+                <!-- Submit Button -->
+                <button type="submit">SUBMIT</button>
+            </form>
+            
+            <!-- Success Message -->
+            <p id="successMessage" style="display:none;">Form submitted successfully!</p>
+        </div>
+        <script src="script.js"></script>
+    </section>
+    <section id="team">
+        <h2 class="title">Our Team</h2>
+        <div>
+            
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>

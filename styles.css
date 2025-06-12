@@ -1,0 +1,259 @@
+@font-face{
+    font-family: myFont;
+    src: url(src/Sinera.otf);
+}
+* {
+    font-family: myFont;
+}
+
+body {
+    background: linear-gradient(90deg,#000000 0%, #e100ff 30%, #00ffdd 70%,#000000 100%);
+    background-image: #ff00ea;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    overflow-x: hidden;
+    
+}
+header {
+    position: fixed;
+    z-index: 100;
+    background-color: #00000060 ;
+    box-shadow: 0px 0px 20px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: #ffffff;
+    width: 80%;
+    padding: 10px 50px 10px 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: auto;
+    font-size: 2.5vh;
+    font-weight: lighter;
+}
+
+  .navbar li {
+    display: inline;
+  }
+  
+  .nav-link {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-link:hover {
+    background-color: #575757;
+    color: white;
+  }
+  
+  .nav-link:active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .nav-link {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+.banner {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    background-color: #ffffff30;
+    padding: 10px;
+    text-align: center;
+    top: 15%;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+section {
+    background-color: #00000060 ;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px auto 20px auto;
+    box-shadow: 0px 0px 5px;
+}
+
+#home {
+    margin-top: 240px;
+    font-size: 11vh;
+    height: 60vh;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home h1 {
+    text-shadow: 10px 10px 5px #000000;
+}
+
+#home h1:hover {
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    transition: ease-in-out;
+    transition: 0.4s linear;
+}
+
+#services .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#services video {
+    height: 70vh;
+    border-radius: 20px;
+    
+}
+
+#services ul {
+    font-size: 8vh;
+    line-height: 100px;
+    width: fit-content;
+}
+
+#services ul:hover li{
+    filter: blur(3px);
+    transition: 0.25s linear;
+    transition-timing-function: ease-in-out;
+
+}
+
+#services ul:hover li:hover{
+    filter: none;
+    transform: translateX(100px);
+    transition: 0.25s linear;
+    transition-timing-function: ease-in-out;
+    scale: 1.15;
+}
+
+.title {
+    font-size: 4vh;
+    margin-left: 50px;
+}
+
+video {
+
+}
+
+/* Style for the form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0000005b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for form labels */
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  } 
+
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .main div {
+    width: 80%;
+  }
+  
+  /* Style for form input fields and textarea */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea {
+    font-family: 'Courier New', Courier, monospace;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    color:deepskyblue;
+    border: 1px solid #ccc;
+    background-color: #ffffff1e;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Style for textarea */
+  form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  /* Style for error messages */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the submit button */
+  form button[type="submit"] {
+    background-color: #00ff3c77;
+    color: white;
+    letter-spacing: 6px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Style for the success message */
+  #successMessage {
+    font-size: 18px;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style for the form when all input fields are valid */
+  form input:valid, 
+  form textarea:valid {
+    border-color: #28a745;
+  }
+  
+  form input:invalid,
+  form textarea:invalid {
+    border-color: #dc3545;
+  }
+  
